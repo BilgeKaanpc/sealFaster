@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "631970726112",
+    "project_id": "sealfasters",
+    "storage_bucket": "sealfasters.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631970726112:android:e3c1dc2d7d9f14bb419085",
+        "android_client_info": {
+          "package_name": "com.bilge.sealfasters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631970726112-ia5pr27gm59ffun67a2g0rcg54jd8m9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOiBOvv42dLLyLgr94l2akthA2f0-nlhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631970726112-ia5pr27gm59ffun67a2g0rcg54jd8m9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

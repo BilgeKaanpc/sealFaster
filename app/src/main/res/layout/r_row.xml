@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sıralamaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1- Nick  Time: 00:00"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"/>
+</LinearLayout>

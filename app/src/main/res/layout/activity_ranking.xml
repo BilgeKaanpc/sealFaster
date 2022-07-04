@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ranking">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1056663813267203/8983008343"
+        app:layout_constraintBottom_toTopOf="@+id/timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout5"
+        android:layout_width="328dp"
+        android:layout_height="242dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/sq1"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:background="#000000"
+            android:onClick="s"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/horse" />
+
+        <ImageView
+            android:id="@+id/sq2"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="4dp"
+            android:background="#000000"
+            android:onClick="ss"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/boar" />
+
+        <ImageView
+            android:id="@+id/sq3"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="sss"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/tiger" />
+
+        <ImageView
+            android:id="@+id/sq4"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="ssss"
+            app:layout_column="3"
+            app:layout_row="0"
+            app:srcCompat="@drawable/dragon" />
+
+        <ImageView
+            android:id="@+id/sq5"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:onClick="sssss"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ram" />
+
+        <ImageView
+            android:id="@+id/sq6"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="ssssss"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/hare" />
+
+        <ImageView
+            android:id="@+id/sq7"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="sssssss"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/snake" />
+
+        <ImageView
+            android:id="@+id/sq8"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="ssssssss"
+            app:layout_column="3"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rat" />
+
+        <ImageView
+            android:id="@+id/sq9"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:onClick="sssssssss"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/dog" />
+
+        <ImageView
+            android:id="@+id/sq10"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="ssssssssss"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/monkey" />
+
+        <ImageView
+            android:id="@+id/sq11"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="sssssssssss"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/ox" />
+
+        <ImageView
+            android:id="@+id/sq12"
+            android:layout_width="75dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="4dp"
+            android:onClick="ssssssssssss"
+            app:layout_column="3"
+            app:layout_row="2"
+            app:srcCompat="@drawable/bird" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adViewss" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="138dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="361dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer">
+
+        <ImageView
+            android:id="@+id/seal1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/horse" />
+
+        <ImageView
+            android:id="@+id/seal2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/boar" />
+
+        <ImageView
+            android:id="@+id/seal3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/tiger" />
+
+        <ImageView
+            android:id="@+id/seal4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/dragon" />
+
+        <ImageView
+            android:id="@+id/seal5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ram" />
+
+        <ImageView
+            android:id="@+id/seal6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/hare" />
+
+        <ImageView
+            android:id="@+id/seal7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/snake" />
+
+        <ImageView
+            android:id="@+id/seal8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rat" />
+
+        <ImageView
+            android:id="@+id/seal9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/dog" />
+
+        <ImageView
+            android:id="@+id/seal10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/monkey" />
+
+        <ImageView
+            android:id="@+id/seal11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ox" />
+
+        <ImageView
+            android:id="@+id/seal12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/bird" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/bestTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="22dp"
+        android:text="Best : 0 "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout5"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
